@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="description" content="Учебный проект">
@@ -8,9 +9,318 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
 
+<header class="header">
 
+	<a class="header-logo">
+		<img src="img/header-logo.png" alt="logo whitesquare" width="161" height="38">
+	</a>
+
+	<form action="javascript:void(0);" class="header-form" method="post">
+		<label>
+			<input type="search" name="search" placeholder="Search">
+		</label>
+		<button class="search-button" type="submit" value="search">Go</button>
+	</form>
+
+	<nav class="header-nav">
+		<ul class="header-nav-list">
+			<li>
+				<a class="current">Home</a>
+			</li>
+			<li>
+				<a href="about.html">About Us</a>
+			</li>
+			<li>
+				<a href="javascript:void(0);">Services</a>
+			</li>
+			<li>
+				<a href="javascript:void(0);">Partners</a>
+			</li>
+			<li>
+				<a href="javascript:void(0);">Customers</a>
+			</li>
+			<li>
+				<a href="projects.html">Projects</a>
+			</li>
+			<li>
+				<a href="javascript:void(0);">Careers</a>
+			</li>
+			<li>
+				<a href="javascript:void(0);">Contact</a>
+			</li>
+		</ul>
+	</nav>
+
+</header>
+
+<main class="index-main">
+
+	<h1 class="visually-hidden">CorporateBlue. Main page.</h1>
+
+	<section class="slider">
+		<h2 class="visually-hidden">Slider</h2>
+		<ul class="slider-list">
+			<!--1-й слайд-->
+			<li class="slider-item active">
+				<b>Fusce vitae nibh quis diam fermentum</b>
+				<p>Etiam adipiscing ultricies commodo.</p>
+			</li>
+			<!--2-й слайд-->
+			<li class="slider-item">
+				<b>Pellentesque pulvinar pellentesque habitant morbi</b>
+				<p>Malesuada fames ac turpis egestas sed tempus urna et.</p>
+			</li>
+			<!--3-й слайд-->
+			<li class="slider-item">
+				<b>Magna eget est lorem ipsum</b>
+				<p>Tortor dignissim convallis aenean et tortor.</p>
+			</li>
+			<!--4-й слайд-->
+			<li class="slider-item">
+				<b>Et ultrices neque ornare aenean euismod</b>
+				<p>Non enim praesent elementum facilisis leo vel fringilla est ullamcorper.</p>
+			</li>
+		</ul>
+		<ul class="slider-controls">
+			<li>
+				<button class="slider-button current">Lorem Ipsum Dolop</button>
+			</li>
+			<li>
+				<button class="slider-button">Ultricies Pellentesque</button>
+			</li>
+			<li>
+				<button class="slider-button">Aliquam ipsum</button>
+			</li>
+			<li>
+				<button class="slider-button">Nullam sed mauris ut</button>
+			</li>
+		</ul>
+	</section>
+
+	<section class="index-articles">
+		<h2 class="visually-hidden">Articles</h2>
+		<article class="block-one-half">
+			<h3 class="index-title">About WhiteSquare</h3>
+			<figure>
+				<!--Контейнер для изображения-->
+			</figure>
+			<p class="content">
+				In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec,
+				ullamcorper et nulla. In eget mi dui, sit amet scelerisque nunc. Aenean augue arcu, convallis ac vulputate
+				vitae, mollis non lectus. Donec hendrerit lacus ac massa ornare hendrerit sagittis lacus tempor. Vivamus et
+				dui et neque accumsan varius et ut erat. Enean augue arcu, convallis ac ultrices.
+				<a class="read-more" href="javascript:void(0);">Read more</a>
+			</p>
+		</article>
+		<article class="block-one-half">
+			<h3 class="index-title">A word from OUR ceo</h3>
+			<figure class="img-container">
+				<!--Контейнер для изображения-->
+			</figure>
+			<blockquote class="blockquote">
+				"In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec,
+				ullamcorper et nulla. In eget mi dui, sit amet scelerisque nunc. Aenean augue arcu, convallis ac vulputate
+				vitae, mollis non lectus. Donec hendrerit lacus ac massa ornare hendrerit sagittis lacus tempor. Vivamus et
+				dui et neque accumsan varius et ut erat. Enean augue arcu, convallis ac.”
+				<cite>Yane Naumoski, CEO</cite>
+			</blockquote>
+		</article>
+		<article class="block-one-third">
+			<h3 class="index-title">Services</h3>
+			<p class="content">
+				In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper et nulla. In
+				eget mi dui, sit amet scelerisque nunc. Aenean augue arcu, convallis ac vulputate vitae, mollis non lectus.
+				Donec hendrerit lacus ac massa ornare hendrerit sagittis lacus tempor. Vivamus et dui et neque accumsan varius
+				et ut erat. Enean augue arcu, convallis ac ultrices.
+				<a class="read-more" href="javascript:void(0);">Read more</a>
+			</p>
+		</article>
+		<section class="block-one-third">
+			<h3 class="index-title">Our Teams</h3>
+			<ul class="teams-list">
+				<li>
+					<a href="javascript:void(0);">
+						<figure>
+							<!--Контейнер для изображения-->
+						</figure>
+						<p>
+							<b>Lorem Ipsum</b>
+							In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper et
+						</p>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">
+						<figure>
+							<!--Контейнер для изображения-->
+						</figure>
+						<p>
+							<b>Lorem Ipsum</b>
+							In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper et
+						</p>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">
+						<figure>
+							<!--Контейнер для изображения-->
+						</figure>
+						<p>
+							<b>Lorem Ipsum</b>
+							In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper et
+						</p>
+					</a>
+				</li>
+			</ul>
+		</section>
+		<article class="block-one-third">
+			<h3 class="index-title">27/7/365 Support</h3>
+			<p class="content">
+				In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper et nulla. In
+				eget mi dui, sit amet scelerisque nunc. Aenean augue arcu, convallis ac vulputate vitae, mollis non lectus.
+				Donec hendrerit lacus ac massa ornare hendrerit sagittis lacus tempor. Vivamus et dui et neque accumsan varius
+				et ut erat. Enean augue arcu, convallis ac ultrices.
+				<a class="read-more" href="javascript:void(0);">Read more</a>
+			</p>
+		</article>
+	</section>
+
+	<section class="clients">
+		<h2>Our clients</h2>
+		<ul class="clients-list">
+			<li>
+				<a href="javascript:void(0);">
+					<img src="img/item1.png" width="61" height="82" alt="client number 1">
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0);">
+					<img src="img/item2.png" width="74" height="74" alt="client number 2">
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="img/item3.png" width="163" height="65" alt="client number 3"
+					></a
+				></li>
+			<li>
+				<a href="javascript:void(0);">
+					<img src="/img/item4.png" width="72" height="82" alt="client number 4">
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0);">
+					<img src="img/item5.png" width="103" height="65" alt="client number 5">
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="img/item6.png" width="76" height="75" alt="client number 6">
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0);">
+					<img src="img/item7.png" width="86" height="83" alt="client number 7">
+				</a>
+			</li>
+		</ul>
+	</section>
+
+</main>
+
+<footer class="footer">
+
+	<a class="footer-logo">
+		<img src="img/footer-logo.png" alt="logo whitesquare" width="161" height="38">
+	</a>
+
+	<section class="twitter">
+		<h3>Twitter Feed</h3>
+		<p>
+			<a href="javascript:void(0);">23 oct</a>
+			In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper et nulla. In
+			eget
+			mi dui, sit amet scelerisque nunc. Aenean aug
+		</p>
+	</section>
+
+	<nav class="site-map">
+		<h3>Sitemap</h3>
+		<ul class="site-map-list">
+			<li>
+				<a href="javascript:void(0);">Home</a>
+			</li>
+			<li>
+				<a href="javascript:void(0);">Partners</a>
+			</li>
+			<li>
+				<a href="javascript:void(0);">About</a>
+			</li>
+			<li>
+				<a href="javascript:void(0);">Support</a>
+			</li>
+			<li>
+				<a href="javascript:void(0);">Services</a>
+			</li>
+			<li>
+				<a href="javascript:void(0);">Contact</a>
+			</li>
+		</ul>
+	</nav>
+
+	<section class="social">
+		<h3>Social networks</h3>
+		<ul class="social-list">
+			<li>
+				<a href="javascript:void(0);">
+					<img src="img/twitter.png" alt="Twitter" width="30" height="31">
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0);">
+					<img src="img/facebook.png" alt="Facebook" width="30" height="31">
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0);">
+					<img src="img/google.png" alt="Google" width="30" height="31">
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0);">
+					<img src="img/vimeo.png" alt="Vimeo" width="16" height="16">
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0);">
+					<img src="img/youtube.png" alt="Youtube" width="16" height="16">
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0);">
+					<img src="img/flicker.png" alt="Flick" width="16" height="16">
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0);">
+					<img src="img/instagram.png" alt="Instagram" width="16" height="16">
+				</a>
+			</li>
+			<li>
+				<a href="javascript:void(0);">
+					<img src="img/rss.png" alt="RRS" width="16" height="16">
+				</a>
+			</li>
+		</ul>
+	</section>
+
+	<p class="copyright">Copyright © 2020 Whitesquare. A <a href="javascript:void(0);">pcklab</a> creation</p>
+
+</footer>
 
 </body>
+
 </html>
