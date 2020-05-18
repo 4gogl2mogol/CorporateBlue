@@ -1,0 +1,198 @@
+.index-articles {
+  margin: 0 0 33px 0;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+//Заголовки на странице index.html
+.index-title {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 0 0 14px 0;
+  padding: 0;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: normal;
+  letter-spacing: 1.036px;
+  color: #7e7e7e;
+
+  &::before {
+    width: 15px;
+    height: 15px;
+    margin: 0 5px 0 0;
+    padding: 0;
+    content: "";
+    background-color: #29c5e6;
+  }
+
+  &::after {
+    flex-grow: 1;
+    margin: 0 0 0 10px;
+    content: "";
+    background-image: repeating-linear-gradient(135deg, transparent 0, transparent 2.5px, #7e7e7e 2.5px, #7e7e7e 3px);
+  }
+}
+//Ссылка на на главной странице
+.read-more {
+  //display: block;
+  color: #525252;
+  //text-decoration: underline;
+  font-size: 12px;
+  line-height: 16px;
+  border-bottom: 2px solid #a5a5a5;
+
+  &:hover {
+    color: #8f8f8f;
+  }
+
+  &:active {
+    color: #29c5e6;
+  }
+}
+
+.block {
+  //Блоки About Whitesquare и A Word Of Our CEO
+  &-one-half {
+    margin: 0 0 36px 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 460px;
+
+    figure {
+      margin: 0;
+      padding: 0;
+      width: 140px;
+      height: 141px;
+      background: #e2e2e2;
+      border: 2px solid white;
+      outline: 1px solid #c9c9c9;
+
+      &:hover {
+        transform: scale(1.1)
+      }
+    }
+    //Контейнер для текста
+    div {
+      width: 300px;
+      min-height: 140px;
+      margin: 0;
+      padding: 0;
+    }
+    //Контент
+    p {
+      margin: 0 0 10px 0;
+      padding: 0;
+      text-align: justify;
+      word-spacing: 0.3px;
+      font-family: 'Tahoma', sans-serif;
+      font-size: 12px;
+      line-height: 16px;
+      font-weight: normal;
+      letter-spacing: -0.29px;
+    }
+    //Контент
+    blockquote {
+      width: 300px;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: justify;
+      word-spacing: 0.3px;
+      font-family: 'Tahoma', sans-serif;
+      font-style: italic;
+      font-size: 12px;
+      line-height: 16px;
+    }
+
+    cite {
+      color: #525252;
+      font-style: normal;
+    }
+  }
+  //Блоки services, our team, support
+  &-one-third {
+    width: 300px;
+    min-height: 180px;
+    //Контент
+    p {
+      margin: 0 0 3px 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      font-family: 'Tahoma', sans-serif;
+      text-align: justify;
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+}
+//Блок our teams
+.teams-list {
+  margin: 0;
+  padding: 3px 0 0 0;
+  color: #8f8f8f;
+  list-style: none;
+
+  li {
+    &:first-child {
+      margin: 0 0 10px 0;
+    }
+
+    &:nth-child(2) {
+      margin: 0 0 10px 0;
+    }
+  }
+
+  a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+
+  figure {
+    margin: 0;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    background: #e2e2e2;
+    border: 2px solid white;
+    outline: 1px solid #c9c9c9;
+
+    &:hover {
+      transform: scale(2.5)
+    }
+  }
+
+  p {
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    color: #8f8f8f;
+    font-family: 'Tahoma', sans-serif;
+    font-size: 11px;
+    line-height: 14px;
+    letter-spacing: -0.209px;
+  }
+
+  b {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: -0.902px;
+  }
+}
+
+

@@ -1,0 +1,140 @@
+.slider {
+  margin: 0 0 33px 0;
+  padding: 0;
+  background-color: #f3f3f3;
+  font-family: 'Oswald', sans-serif;
+  //Контейнер для слайдов
+  &-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  //Слайд
+  &-item {
+    width: 960px;
+    height: 280px;
+    margin: 0;
+    padding: 32px 36px;
+    background-color: #e2e2e2;
+
+    &:first-child {
+      display: block;
+    }
+
+    &:nth-child(2) {
+      display: none;
+    }
+
+    &:nth-child(3) {
+      display: none;
+    }
+
+    &:nth-child(4) {
+      display: none;
+    }
+
+    b {
+      display: block;
+      margin: 0 0 5px 0;
+      padding: 0;
+      text-transform: uppercase;
+      color: #5a5a5a;
+      font-size: 42px;
+      letter-spacing: -0.1px;
+      line-height: 48px;
+      font-weight: 200;
+    }
+
+    p {
+      margin: 0;
+      padding: 0 0 0 3px;
+      font-size: 20px;
+      line-height: 20px;
+      font-weight: 200;
+      letter-spacing: 0.02px;
+      color: #acacac;
+    }
+  }
+
+  //Контейнер для кнопок управления слайдером
+  &-controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 12px 40px 14px 12px;
+    //Маркер является частью текстового блока и отображается в элементе списка.
+    list-style-position: inside;
+    counter-reset: Counter;
+    box-shadow: 0 3px 0 -1px #e7e7e7;
+    //Контейнр для кнопки
+    li {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      list-style: none;
+      width: 240px;
+    }
+  }
+
+  //Кнопка слайдера
+  &-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 240px;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 0.216px;
+    color: #8f8f8f;
+    border: none;
+
+    &::before {
+      display: block;
+      padding: 0;
+      margin: 0 10px 0 0;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 200;
+      line-height: 24px;
+      width: 24px;
+      background: #8f8f8f;
+      color: white;
+      counter-increment: Counter;
+      content: counter(Counter);
+    }
+
+    &:hover {
+      opacity: 0.8;
+      color: #29c5e6;
+
+      &::before {
+        background: #29c5e6;
+      }
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
+}
+
+//текущий слайд
+.current-button {
+  color: #29c5e6;
+
+  &::before {
+    background: #29c5e6;
+  }
+}
+
+//Последняя кнопка имеет другую ширину
+.last-button {
+  width: 200px;
+}
