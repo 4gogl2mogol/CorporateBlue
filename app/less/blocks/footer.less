@@ -1,0 +1,159 @@
+.footer {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #7e7e7e;
+  color: white;
+
+  h3 {
+    margin: 0 0 4px 0;
+    padding: 0;
+    color: #dbdbdb;
+    text-align: left;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: normal;
+    letter-spacing: 0.742px;
+    border-bottom: 1px solid #919191;
+  }
+
+  &-wrapper {
+    width: 960px;
+    margin: 0 auto;
+    padding: 8px 0 15px 11px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  &-logo-container {
+    order: 1;
+    margin: 16px 0 0 auto;
+    width: 230px;
+  }
+
+  &-logo {
+    margin: 0 0 8px 0;
+    padding: 0 0 0 69px;
+    display: block;
+  }
+
+  &-twitter {
+    margin: 0 20px 0 0;
+    padding: 0;
+    width: 300px;
+
+    a {
+      margin: 0 ;
+      padding: 0 0 0 4px;
+      color: #b4aeae;
+      text-decoration: underline;
+      font-size: 11px;
+      line-height: 14px;
+    }
+
+    p {
+      margin: 0;
+      padding: 0 0 0 4px;
+      width: 275px;
+      font-size: 11px;
+      line-height: 14px;
+      color: #dbdbdb;
+    }
+  }
+
+  &-nav {
+    margin: 0 20px 0 0;
+    padding: 0;
+    width: 150px;
+  }
+
+  &-nav-list {
+    margin: 0;
+    padding: 0;
+    width: 160px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+
+    li {
+      flex-basis: 50%;
+    }
+
+    a {
+      margin: 0;
+      padding: 0;
+      display: block;
+      //text-align: start;
+      font-size: 12px;
+      line-height: 18px;
+      color: #dbdbdb;
+
+      &:hover {
+        color: white;
+      }
+
+      &:active {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  &-social {
+    margin: 0 0 0 0;
+    padding: 0;
+    width: 130px;
+  }
+
+  &-social-list {
+    margin: 10px 0 0 0;
+    padding: 0;
+    width: 110px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+    li:first-child {
+      margin: 0  4px 4px 0;
+    }
+    li:nth-child(2) {
+      margin: 0  4px 0 0;
+    }
+  }
+}
+
+.copyright {
+  margin: 0;
+  padding: 0;
+  width: 230px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  font-size: 10px;
+  line-height: 18px;
+  color: #dbdbdb;
+
+  &-link {
+    margin: 0;
+    padding: 0;
+    color: #dbdbdb;
+    text-decoration: underline;
+
+    &:hover {
+      color: white;
+    }
+
+    &:active {
+      opacity: 0.8;
+    }
+  }
+}
+
+
+
